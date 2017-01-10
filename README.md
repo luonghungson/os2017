@@ -10,5 +10,5 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
+* Name: luonghungson
+* ID: USTHBI6-126
