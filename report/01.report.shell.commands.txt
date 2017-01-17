@@ -1,0 +1,52 @@
+echo hello world
+	hello world
+
+passwd
+	Changing password for real-vigga.
+	(current) UNIX password: 
+
+date
+	Thứ hai, 16 Tháng một năm 2017 22:15:13 ICT
+
+hostname
+	real-vigga-G551JM
+
+arch
+	x86_64
+
+uname -a
+	Linux real-vigga-G551JM 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 	x86_64 x86_64 GNU/Linux
+
+dmesg
+	[ 5457.373675] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 2 (2457/0 MHz)
+	[ 5458.295263] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 1 (2467/0 MHz)
+	[ 5459.319250] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 2 (2457/0 MHz)
+	[ 5478.365398] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 1 (2467/0 MHz)
+	[ 5481.334967] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 2 (2457/0 MHz)
+	[ 5498.333138] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 1 (2467/0 MHz)
+	[ 5499.357127] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 2 (2457/0 MHz)
+	[ 5525.366382] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 1 (2467/0 MHz)
+	[ 5527.313767] wlp4s0: AP c4:6e:1f:2b:af:0c changed bandwidth, new config is 2467 MHz, width 2 (2457/0 MHz)
+	[ 7828.355644] perf interrupt took too long (2680 > 2500), lowering kernel.perf_event_max_sample_rate to 50000
+
+uptime
+	22:20:59 up  2:42,  1 user,  load average: 0,33, 0,32, 0,51
+
+who am i
+	
+whoami
+	real-vigga
+who
+	real-vigga tty7         2017-01-16 19:39 (:0)
+id
+	uid=1000(real-vigga) gid=1000(real-vigga) groups=1000(real-vigga),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+last
+
+finger
+	Login       Name         Tty      Idle  Login Time   Office     Office Phone
+	real-vigga  real vigga   tty7           Jan 17 16:02 (:0)
+
+w
+	22:24:53 up  2:46,  1 user,  load average: 0,28, 0,38, 0,49
+	USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+	real-vig tty7     :0               19:39    2:46m  2:50   0.12s /sbin/upstart --user
