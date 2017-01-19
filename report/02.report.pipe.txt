@@ -1,0 +1,23 @@
+ls -la | grep list
+	-rw-rw-r--  1 real-vigga real-vigga    0 Th01 19 23:39 another list file
+	-rw-rw-r--  1 real-vigga real-vigga  281 Th01 19 23:29 filelist
+	-rw-rw-r--  1 real-vigga real-vigga    5 Th01 17 10:43 list
+	-rw-rw-r--  1 real-vigga real-vigga   96 Th01 17 10:37 list1
+	-rw-rw-r--  1 real-vigga real-vigga    0 Th01 19 23:38 list 123
+	drwxrwxr-x  2 real-vigga real-vigga 4096 Th01 20 00:30 list folder
+
+wc -l /etc/passwd
+	41 /etc/passwd
+
+free -t -m
+		total        used        free      shared  buff/cache   available
+	Mem:           3834        2339         293         833        1200         385
+	Swap:          7628         612        7016
+	Total:        11463        2952        7309
+
+grep -m 1 'cpu cores' /proc/cpuinfo
+	cpu cores	: 4
+
+find ~/Pictures -type f -name "*.jpg" | wc -l
+	7
+
