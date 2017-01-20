@@ -1,0 +1,50 @@
+ps -aux
+	real-vi+ 25502  2.4  2.1 1322380 85596 ?       Sl   02:56   0:11 evince /home/re
+	real-vi+ 25592  2.0  2.9 1152956 116196 ?      Sl   02:59   0:06 /opt/google/chr
+	root     25621  0.0  0.0      0     0 ?        S    03:01   0:00 [kworker/1:1]
+	root     25639  0.0  0.0      0     0 ?        S    03:02   0:00 [kworker/3:2]
+	root     25640  0.0  0.0      0     0 ?        S    03:03   0:00 [kworker/2:2]
+	real-vi+ 25651  0.3  0.8 663172 33828 ?        Rl   03:03   0:00 /usr/lib/gnome-
+	real-vi+ 25658  0.0  0.1  31196  5248 pts/0    Ss   03:03   0:00 bash
+	root     25668  0.0  0.0      0     0 ?        S    03:03   0:00 [kworker/5:2]
+	root     25713  0.0  0.0      0     0 ?        S    03:03   0:00 [kworker/6:0]
+	real-vi+ 25755  0.0  0.0  45960  3608 pts/0    R+   03:04   0:00 ps -aux
+
+firefox
+
+ ps -aux | grep  firefox
+	real-vi+  2358  0.0  0.0  22820   936 pts/11   S+   09:22   0:00 grep --color=auto firefox
+
+ps aux | grep [f]irefox
+	real-vi+  2465  0.8  7.2 1041768 283936 pts/11 Sl+  09:26   0:06 /usr/lib/firefox/firefox
+
+cat /proc/2465/status
+	CapEff:	0000000000000000
+	CapBnd:	0000003fffffffff
+	CapAmb:	0000000000000000
+	Seccomp:	0
+	Cpus_allowed:	ff
+	Cpus_allowed_list:	0-7
+	Mems_allowed:	00000000,00000001
+	Mems_allowed_list:	0
+	voluntary_ctxt_switches:	4853
+	nonvoluntary_ctxt_switches:	41
+
+kill -s STOP 2465
+		1484879942101	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+	1484879942107	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+	1484879942113	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+	1484879942118	addons.update-checker	WARN	Update manifest for aushelper@mozilla.org did not contain an updates property
+	1484879942250	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+	[1]+  Stopped                 firefox
+
+kill -s CONT 2465
+
+kill -s KILL 2465
+	
+
+
+
+
+
