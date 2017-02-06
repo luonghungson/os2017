@@ -14,9 +14,9 @@ free -t -m
 	Mem:           3834        2339         293         833        1200         385
 	Swap:          7628         612        7016
 	Total:        11463        2952        7309
-
-grep -m 1 'cpu cores' /proc/cpuinfo
-	cpu cores	: 4
+	
+grep  "processor" /proc/cpuinfo | wc -l
+	8
 
 find ~/Pictures -type f -name "*.jpg" | wc -l
 	7
