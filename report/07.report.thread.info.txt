@@ -1,0 +1,7 @@
+$ ps -aux | grep  [f]irefox
+
+	real-vi+  8217  1.8  6.4 1248120 254216 pts/2  Sl+  03:28   0:07 /usr/lib/firefox/firefox
+
+$ ls /proc/8217/task | wc -l
+	
+	52
