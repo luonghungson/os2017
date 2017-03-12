@@ -71,7 +71,7 @@ void *threadFunctionCon(void *param) {
 	return 0;
 }
 
-int main(){
+void *mainthread(){
 	pthread_t pro, con;
 	
 	pthread_create(&pro, NULL, threadFunctionPro, NULL);
@@ -79,6 +79,14 @@ int main(){
 
 	pthread_create(&con, NULL, threadFunctionCon, NULL);
 	pthread_join(con, NULL);
+}
+	
+
+int main(){
+	pthread_t MT;
+	printf("In main thread:\n\n");
+	pthread_create(&MT, NULL, mainthread, NULL);
+	pthread_join(MT, NULL);
 
 	return 0;
 }
